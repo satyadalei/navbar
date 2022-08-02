@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    height: 100vh;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12%;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+}
+
+.nav-items {
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    /* height: 100%; */
+    transition: 0.5s;
+}
+
+.nav-items li {
+    margin-left: 5%;
+}
+
+.nav-items li a {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    /* width:100px; */
+    padding: 0.6rem 1rem;
+    border-radius: 0.8em;
+    transition: 0.6s;
+}
+
+.nav-items li a:hover {
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+}
+
+.bars {
+    display: none;
+}
+
+.bar {
+    width: 15px;
+    height: 5px;
+    background-color: black;
+    margin-bottom: 3px;
+    transition: 0.5s;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-items {
+        position: absolute;
+        top: 12%;
+        left: -100%;
+        flex-direction: column;
+    }
+
+    .bars {
+        display: block;
+        margin-right: 5%;
+        width: 05%;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 100%;
+        height: 0.3rem;
+        margin-bottom: 0.2rem;
+        border-radius: 1rem;
+    }
+    .active .bar1 {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .active .bar2 {
+        opacity: 0;
+    }
+    .active .bar3 {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .menu-active{
+      background-color: white;
+        position: absolute;
+        top: 12%;
+        left:0;
+        width: 100%;
+        /* height: 50%; */
+    }
+    .nav-items{
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .nav-items li{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-top: 1px solid rgba(128, 128, 128, 0.341);
+    }
+    .nav-items li a{
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+}
