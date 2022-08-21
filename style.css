@@ -29,7 +29,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 800;
     text-decoration: none;
-    letter-spacing: 0.2rem;
+    /* letter-spacing: 0.2rem; */
 }
 
 .nav-items {
